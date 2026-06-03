@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #ffd6e7,
+        #fff8e8
+    );
+    font-family:'Prompt',sans-serif;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    width:500px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+h1{
+    color:#ff6b9a;
+}
+
+button{
+    background:#ff8db3;
+    border:none;
+    color:white;
+    padding:12px 25px;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#letter{
+    margin-top:20px;
+    display:none;
+    line-height:1.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>To My Love ❤️</h1>
+
+    <p>
+        มีบางอย่างอยากบอก...
+    </p>
+
+    <button onclick="showLetter()">
+        เปิดจดหมาย 💌
+    </button>
+
+    <div id="letter">
+        <p>
+            ขอบคุณที่เข้ามาเป็นความสุขในชีวิตพี่<br>
+            ทุกวันที่มีหนูอยู่ มันพิเศษเสมอ<br><br>
+
+            ไม่ว่าจะเกิดอะไรขึ้น<br>
+            พี่ก็ยังเลือกหนูทุกวัน ❤️<br><br>
+
+            รักหนูนะคนเก่ง 🤍
+        </p>
+    </div>
+</div>
+
+<script>
+function showLetter(){
+    document.getElementById("letter").style.display="block";
+}
+</script>
+
+</body>
+</html>
